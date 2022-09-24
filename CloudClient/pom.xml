@@ -4,10 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- Нет наследования главного модуля -->
+
     <groupId>com.naumdeveloper</groupId>
+    <!-- Артифакт указан не так, как главном в секции modules -->
     <artifactId>NetworkStorageInJava</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!-- name - это просто описание, ни на что не влияет -->
     <name>CloudClient</name>
+    <!-- Не верный тип pom'a. Это нужно только для тех модулей, у которых нет кода, только pom (главный модуль). Удалить! -->
     <packaging>pom</packaging>
 
     <properties>

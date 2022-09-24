@@ -11,6 +11,7 @@
     <modules>
         <module>CloudServer</module>
         <module>CloudCommon</module>
+        <!-- модуль указан как CloudClient -->
         <module>CloudClient</module>
     </modules>
     <name>NetworkStorageInJava</name>
@@ -20,6 +21,7 @@
         <junit.version>5.9.0</junit.version>
     </properties>
 
+    <!-- Все указанные здесь зависимости попадут в другие модули, т.к. он указан как родительский, возможно они не нужны там -->
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
